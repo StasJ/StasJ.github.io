@@ -1,1 +1,124 @@
-Hello World
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stas's Personal Site</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<style type="text/css">
+body {
+	margin: 20;
+}
+</style>
+</head>
+<body>
+<p>Hi, this is just a repository with a few of my projects.</p>
+<hr>
+<h3>Software Rasterizer</h3>
+<p> This is a project I started for fun and ended up finishing as a project for my graphics course. (Implements a GPU rendering pipeline from scratch in software)</p>
+Features:
+<ul>
+<li>Perspective correct texturing</li>
+<li>.obj and .mtl file support</li>
+<li>Clipping</li>
+<li>Intuitive data managers for objects, meshes, textures, etc using C++ templates</li>
+<li>Decently fast</li>
+</ul>
+<a href="project_files/rasterizer/rasterizer.zip">rasterizer.zip</a><br>
+<a href="project_files/rasterizer/Graphics Presentation.pptx">Graphics Presentation.pptx</a>
+<br> <br>
+<a href="project_files/rasterizer/1.png"><img src="project_files/rasterizer/1.png" width="300"></a>
+<a href="project_files/rasterizer/2.png"><img src="project_files/rasterizer/2.png" width="300"></a>
+<br>
+<a href="project_files/rasterizer/3.png"><img src="project_files/rasterizer/3.png" width="300"></a>
+<a href="project_files/rasterizer/4.png"><img src="project_files/rasterizer/4.png" width="300"></a>
+<br>
+
+<hr>
+<h3>Textmode VGA Card</h3>
+<p>Written in Verilog and runs on Atera Cyclone II FPGA.<br>
+Memory IO text buffer interface.<br>
+Supports bitmap characters and 16 colors.</p>
+<a href="project_files/vga/1.JPG"><img src="project_files/vga/1_300.JPG" width="300"></a>
+<a href="project_files/vga/2.JPG"><img src="project_files/vga/2_300.JPG" width="300"></a> <br>
+Images have hardcoded text buffer since I did not have a CPU at the time.<br>
+I do not currently have access to the source code.
+
+<hr>
+<h3>Minecraft Clone</h3>
+<p>A minecraft clone done for class.<br>
+Took about 13 hours<br>
+All artwork belongs to Mojang<br>
+</p>
+<a href="project_files/mine/minecraft.zip">minecraft.zip</a><br>
+<a href="project_files/mine/1.jpg"><img src="project_files/mine/1_small.jpg"></a> <br>
+
+<hr>
+<h3>N64 PS4 Remote</h3>
+<p>A project I did in high school that allows you to control an N64 using a wireless Dualshock 4 controller.<br>
+Its more of a proof of concept as it uses a computer as the receiver.</p>
+<a href="project_files/n64/N64_Controller_Transmitter.zip">N64_Controller_Transmitter.zip</a> arduino program that sends controller data to N64.<br>
+<a href="project_files/n64/N64_Controller_Reciever.zip">N64_Controller_Reciever.zip</a> receives Dualshock HID input and relays to arduino.<br>
+
+<hr>
+<h3>Arduino Logic Analyzer</h3>
+<p>A logic analyzer I made to decode the N64 single wire controller protocol and test my implementation.</p>
+<a href="project_files/logic/Logic_Analyzer_Arduino.zip">Logic_Analyzer_Arduino.zip</a><br>
+<a href="project_files/logic/Logic_Analyzer_Interface.zip">Logic_Analyzer_Interface.zip</a><br>
+<a href="project_files/logic/1.png"><img src="project_files/logic/1.png" width="500"></a>
+
+<hr>
+<h3>Midly Interesting</h3>
+<h4>PyHP Web Server</h4>
+<p>A dynamic web server done in python for an open homework assignment in freshman intro to programming class. <br>
+Supports inline and multiline embedded python in html code that provides PHP like functionality. <br>
+<!--For example: <span style="background:#ccc; border: 1px solid #888; padding:3px;">&lt;h3&gt;Directory listing of &lt;?print(DIRECTORY)?&gt;&lt;/h3&gt;</span></p>-->
+For example: <code>&lt;h3&gt;Directory listing of &lt;?print(DIRECTORY)?&gt;&lt;/h3&gt;</code></p>
+<a href="project_files/PyHP_Web_Server.zip">PyHP_Web_Server.zip</a><br>
+
+<br>
+<p>More to come when I stumble across old projects...</p>
+
+<hr>
+
+<h3>Leave me a message</h3><br>
+
+<form action="/message.php" method="post" class="form-horizontal">
+  <div class="form-group">
+    <label for="email" class="col-sm-1 control-label">Email</label>
+    <div class="col-sm-10">
+      <input name="email" type="email" class="form-control" id="email" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="name" class="col-sm-1 control-label">Name</label>
+    <div class="col-sm-10">
+      <input name="name" type="text" class="form-control" id="name" placeholder="Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-1 col-sm-10">
+		<textarea name="message" class="form-control" rows="3" placeholder="Message"></textarea>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-1 col-sm-10">
+      <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+</form>
+
+<hr>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>
